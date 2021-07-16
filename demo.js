@@ -1,4 +1,7 @@
 // Inspiration from https://twitter.com/maxSigma_/status/1264900383081664514
+q = d.createElement`canvas`
+v = q.getContext`2d`
+
 t = 0
 B = []
 
@@ -6,9 +9,8 @@ w = a.width
 h = a.height
 
 // create an auxiliar canvas to draw the reflection
-q = d.createElement`canvas`
+
 q.height = h
-v = q.getContext`2d`
 
 // butterfly encoded points (half)
 p = "rlmhifgeefdgdigmgnhoipppmpjqhrhtixkzmzpyqvrr"
