@@ -66,7 +66,7 @@ setInterval(_=>{
     v.globalAlpha = .5
     L(w/2, h/2, h/8)
     
-    // dtaw butterflies
+    // draw butterflies
     for(; k--; v.fill()) {
       v.beginPath()
       for(i = 0; i < 80; v.lineTo(
