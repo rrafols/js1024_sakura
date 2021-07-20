@@ -93,15 +93,13 @@ setInterval(_=>{
     // blurred reflection
     for(i = 2; i--; c.restore()) {
       c.save()
-      c.rect(0, i * h/2, w, h/2)
-      c.clip()
 
       if (i) {
         c.filter = 'blur(2px)'
         c.scale(1,-1)
-        c.translate(0,-h)
       }
-      c.drawImage(q,0,0)
+      
+      c.drawImage(q,0,-i*h)
     }
     t += 5
 })
